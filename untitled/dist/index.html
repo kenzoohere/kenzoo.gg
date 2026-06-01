@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kenzoo.gg</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">kenzoo<span>.gg</span></div>
+        <div class="right" id="navRight">
+            <button class="btn btn-outline" onclick="openModal('login')">Login</button>
+            <button class="btn btn-solid" onclick="openModal('signup')">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Tabs -->
+    <div class="tabs-bar">
+        <div class="tab active" onclick="switchTab('scripts',this)">SCRIPTS</div>
+        <div class="tab" onclick="switchTab('executors',this)">EXECUTORS</div>
+        <div class="tab" onclick="switchTab('discord',this)">DISCORD</div>
+    </div>
+
+    <!-- Scripts Page -->
+    <div class="page active" id="page-scripts">
+        <div class="section-header">
+            <h2>SCRIPTS</h2>
+            <p>High-quality Roblox scripts from the community</p>
+        </div>
+        <div class="toolbar">
+            <div class="search-wrap">
+                <input class="search-input" id="scriptSearch" placeholder="Search scripts..." oninput="filterScripts()">
+            </div>
+            <select class="search-input" style="width:auto; min-width:180px;" id="scriptFilter" onchange="filterScripts()">
+                <option value="">All Games</option>
+                <option value="Blox Fruits">Blox Fruits</option>
+                <option value="Pet Simulator 99">Pet Simulator 99</option>
+                <option value="Arsenal">Arsenal</option>
+                <option value="Universal">Universal</option>
+            </select>
+        </div>
+        <div class="grid" id="scriptsGrid"></div>
+    </div>
+
+    <!-- Executors Page -->
+    <div class="page" id="page-executors">
+        <div class="section-header">
+            <h2>EXECUTORS</h2>
+            <p>Best Roblox Executors • 2026</p>
+        </div>
+        <div class="toolbar">
+            <div class="search-wrap">
+                <input class="search-input" id="execSearch" placeholder="Search executors..." oninput="filterExecutors()">
+            </div>
+        </div>
+        <div class="grid" id="executorsGrid"></div>
+    </div>
+
+    <!-- Discord Page -->
+    <div class="page" id="page-discord">
+        <div class="discord-hero">
+            <h2>Join Our Discord</h2>
+            <p>Get the latest scripts, executor updates, and community support.</p>
+            <a href="https://discord.gg/RfGdTE3gmY" target="_blank" class="discord-btn">Join Discord</a>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script src="/script.js"></script>
+  </body>
+
+</html>
